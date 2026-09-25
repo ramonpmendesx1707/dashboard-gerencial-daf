@@ -10,10 +10,6 @@ Desenvolvido por **[Thomas A. Monteiro](mailto:thomasmonteiro@thomasmonteiro.com
 
 *Visão de entrada da plataforma: análise e inteligência comercial, autenticação e autoria de Thomas A. Monteiro.*
 
-![Tela de entrada do Dashboard Gerencial](docs/assets/dashboard-login.png)
-
-*Visão de entrada da plataforma: análise e inteligência comercial, autenticação e autoria de Thomas A. Monteiro.*
-
 ## Dois perfis demonstrativos
 
 No canto superior direito, clique no avatar e escolha **Gestão Comercial** ou **Diretoria**.
