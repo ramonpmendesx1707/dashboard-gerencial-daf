@@ -1,0 +1,3 @@
+'use client';
+import {ShieldCheck} from 'lucide-react';import {type Model} from '@/lib/mock-data';import {directorInsight} from '@/lib/director-data';export type {DemoRole} from '@/lib/director-data';
+export function DirectorInsights({page,model}:{page:string;model:Model}){const i=directorInsight(page,model);return <section className="director-insights"><header><ShieldCheck size={20}/><div><p>ACESSO DIRETORIA</p><h2>{i.summary}</h2></div></header><div className="director-readings">{i.findings.map(f=><article key={f.title}><h3>{f.title}</h3><p>{f.fact}</p><small>{f.action}</small></article>)}</div><p className="director-note">{i.evolution}</p></section>}

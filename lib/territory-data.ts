@@ -1,0 +1,2 @@
+import {type Model} from './mock-data';
+export function territoryRows(m:Model){return [...new Set(m.selected.map(c=>c.city))].sort((a,b)=>a.localeCompare(b,'pt-BR')).map(name=>{const cs=m.selected.filter(c=>c.city===name),ids=new Set(cs.map(c=>c.id)),mm=m.total.mm.filter(e=>ids.has(e.client)),vv=m.total.vv.filter(e=>ids.has(e.client));return {name,market:mm.reduce((s,e)=>s+e.qty,0),visits:vv.length,portfolio:cs.filter(c=>c.crm).length,uncovered:cs.filter(c=>c.crm&&mm.some(e=>e.client===c.id)&&!vv.some(e=>e.client===c.id)).length}})}
